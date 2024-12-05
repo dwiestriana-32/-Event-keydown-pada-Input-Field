@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Keydown</title>
+  </head>
+<body>
+  <input type="text" id="inputField" placeholder="Type something...">
+    <p id="displayText"></p>
+
+  <script>
+    const inputField = document.getElementById('inputField');
+    const displayText = document.getElementById('displayText');
+
+    inputField.addEventListener('keydown', function (event) {
+      displayText.textContent = event.target.value;
+    });
+  </script>
+</body>
+</html>
